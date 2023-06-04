@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel = "stylesheet" href = "src/css/style.css">
+    <script src="src/js/script.js" defer></script>
+
+    <title>Music</title>
+
+</head>
+
+<body>
+
+    <div class="pic-menu">
+        
+        <a id="left" onclick="Nexto(-1)">
+            <img src="src/icons/left-arrow.svg"/> 
+        </a>
+
+        <a id="right" onclick="Nexto(1)">
+           <img src="src/icons/left-arrow.svg"/>
+        </a>
+
+    </div>
+
+    <div class="info">
+        <div class="track-art"> </div>
+        <div class="track-artist">Artist</div>
+        <div class="track-name">Name</div>
+    </div>
+
+    <div class="slider_container">
+        <div class="current-time">00:00</div>
+            <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+            <div class="total-duration">00:00</div>
+    </div> 
+
+
+        <div class="buttons">
+
+            <div class="prev-track" onclick="prevTrack()">
+                <img src="src/icons/prev-button.svg"/> 
+             </div>
+
+             <div class="playpause-track" onclick="playpauseTrack()">
+                <img class="play" src="src/icons/play.svg"/> 
+             </div>
+
+             <div class="next-track" onclick="nextTrack()">
+                <img src="src/icons/next-button.svg"/> 
+             </div>
+             
+        </div>
+
+        <div class="wave">
+            <span class="stroke"></span>
+            <span class="stroke"></span>
+            <span class="stroke"></span>
+            <span class="stroke"></span>
+            <span class="stroke"></span>
+            <span class="stroke"></span>
+            <span class="stroke"></span>
+            <span class="stroke"></span>
+            <span class="stroke"></span>
+            <span class="stroke"></span>
+            <span class="stroke"></span>
+            <span class="stroke"></span>
+            <span class="stroke"></span>
+            <span class="stroke"></span>
+            <span class="stroke"></span>
+            <span class="stroke"></span>
+            <span class="stroke"></span>
+            <span class="stroke"></span>
+        </div>  
+
+    </div>
+
+    <div class="image" style="display: block;"> 
+        <img src="src/img/liquid-purple-art-painting-abstract-colorful-background-with-color-splash-paints-modern-art.jpg" />
+    </div>
+
+    <div class="text">el texto uno</div>
+
+    <div class="image"> 
+        <img src="src/img/liquid-purple-art-painting-abstract-colorful-background-with-color-splash-paints-modern-art-3.jpg" /> 
+    </div>
+
+    <div class="text">el texto dos</div>
+
+    <div class="image"> 
+        <img src="src/img/liquid-marbling-paint-texture-background-fluid-painting-abstract-texture-intensive-color-mix-wallpaper.jpg" /> 
+    </div>
+
+    <div class="text">el texto tres</div>
+
+
+</body>
+
+</html>

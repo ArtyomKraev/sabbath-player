@@ -1,0 +1,332 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face 
+{
+    font-family: "Gerbera"; 
+    src: url("../fonts/Gerbera.ttf") format("truetype"); 
+} 
+
+body
+{
+    background-color: #000000;
+    color: white;
+
+    font-family: Gerbera;
+
+    display: flex;
+    justify-content: center;
+
+    position:absolute;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:0px;
+}
+
+.pic-menu
+{
+    background: linear-gradient(105.42deg, #44005E 11.21%, #8B04BD 88.59%);
+    box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+
+    position: absolute;
+    left: 25px;
+    top: 45px;
+
+    width: 151px;
+    height: 47px;
+}
+
+.pic-menu a
+{
+    cursor: pointer;
+    user-select: none;
+
+    width: 15px;
+    height: 15px;
+}
+
+#left
+{
+    position: absolute;
+    left: 10px;
+    top: 16.5px;
+}
+
+#right
+{
+    position: absolute;
+    right: 10px;
+    top: 17.5px;
+
+    transform: rotate(-180deg);
+}
+
+.buttons
+{
+    cursor: pointer;
+}
+
+.track-art
+{
+    position: absolute;
+    margin: 60px 500px;
+}
+
+.track-art img
+{
+    width: 465px;
+    height: 465px;
+
+    box-shadow: 0px 0px 70px 15px #B701FB;
+    border-radius: 10px;
+}
+
+.track-artist
+{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 44px;
+
+    position: absolute;
+    margin: 630px 500px;
+
+    color: #ffffff;
+
+    width: 465px;
+    height: 105px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.track-name
+{
+    font-weight: 500;
+    font-size: 40px;
+
+    position: absolute;
+    margin: 590px 500px;
+
+    color: #ffffff;
+    
+    width: 465px;
+    height: 105px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#one
+{
+    font-size: 20px;
+}
+
+
+#two 
+{
+    font-size: 18px;
+}
+
+.slider_container 
+{
+    position: absolute;
+    width: 465px;
+    height: 27px;
+    
+    left: 500px;
+    top: 565px;
+}
+    
+.seek_slider 
+{
+    appearance: none;
+    height: 5px;
+    background: #ffffff;
+    box-shadow: 0px 0px 35px 5px rgba(255, 255, 255, 0.25);
+    transition: opacity .2s;
+}
+
+.seek_slider:hover 
+{
+    opacity: 1.0;
+}
+    
+.seek_slider 
+{
+    background: #C578E2;
+    border-radius: 20px;
+
+    width: 465px;
+    height:10px;
+
+    position: absolute;
+    left: 0px;
+    top: 20px;
+}
+
+.current-time
+{
+
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 17px;
+
+    display: flex;
+    align-items: center;
+    
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    
+    width: 50px;
+    height: 10px;
+
+    color: #FFFFFF;
+}
+
+.total-duration
+{
+    font-weight: 500;
+    font-size: 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    
+    position: absolute;
+    left: 415px;
+    top: 0px;
+
+    width: 50px;
+    height: 10px;
+
+    color: #C578E2;
+}
+
+input[type="range"] { 
+    overflow: hidden;
+    background: #C578E2;
+    width: 465px;
+    height:10px;
+    cursor: pointer;
+    border-radius: 20; 
+}
+
+::-webkit-slider-runnable-track {
+    background: #C578E2;
+    border-radius: 20px;
+
+    width: 465px;
+    height:10px;
+}
+
+::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 465px; /* 1 */
+    height:10px;
+    background: white;
+    box-shadow: -465px 0 0 465px white; /* 2 */
+    border-radius:10px;
+
+    width:10px;
+    height:10px;
+}
+
+.prev-track
+{
+    position: absolute;
+    left: 590px;
+    top: 725px;
+}
+
+.playpause-track .play
+{
+    position: absolute;
+    left: 700px;
+    top: 720px;
+
+}
+
+.playpause-track .pause
+{
+    position: absolute;
+    left: 695px;
+    top: 720px;
+
+}
+
+.next-track
+{
+    position: absolute;
+    left: 800px;
+    top: 724px;
+}
+    
+.image
+{
+    display: none;
+    z-index: -2;
+}
+
+.image img
+{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 50%;
+}
+
+.text
+{
+    font-size: 14px;
+    font-weight: 500;
+
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    width: 95px;
+    height: 40px;
+
+    position: absolute;
+    left: 54px;
+    top: 60.5px;
+}
+ 
+.wave
+{
+    position: absolute;
+    justify-self: center;
+    bottom: 0px;
+    height: 550px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+
+.stroke
+{
+    background: linear-gradient(180deg, #BA00FF 0%, rgba(17, 10, 20, 0) 100%);
+
+    max-height: 550px;
+    min-height: 0;
+    width: 75px;
+    height: 0px;  
+
+    border-radius: 15px;
+
+    margin: 0 2.5px;
+
+    transition: 0.15s ease-out;
+}
